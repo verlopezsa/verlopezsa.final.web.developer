@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Diseño de Interiores</title>
+		<link rel="stylesheet" type="text/css" href="miEstilo.css">
+		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<div align="center">
+			<img id="logo" src="https://cdn2.vectorstock.com/i/1000x1000/73/41/kawaii-cactus-design-vector-15027341.jpg"/>
+		</div>
+		<h1>Diseña tus propios espacios</h1>
+	    </br>
+	    <div class="row">
+			<div class="col-lg">
+				<div class="contenido">
+					<div id="Espacios" class="title">Espacios Únicos</div>
+					<p>Con esta aplicación puedes diseñar cada estancia de tu casa y poder visualizar como quedan los cambios que pretendes realizar. Te permite cambiar muebles de sitio, ponerlos nuevos, añadir nuevas cuadros a la pared, cambiar el tipo de suelo, cambiar el color de las puertas, la pintura de las paredes ... Todo un mundo de posibilidades al alcance de un click. </p>
+				</div>
+			</div>
+			<div class="col-lg">
+				<div class="contenido">
+					<div id="Tabla" class="title">Tipos de espacios</div>
+					<table>
+						<tr>
+							<td class="label-col">Usuario:</td>
+							<td class="input-col"><input type="text" name="usuario" id="usuario" onblur="validateUser();"></td>
+							<td><span id="usuarioPrompt">&nbsp;</span></td>
+						<tr>
+						<tr>
+							<td class="label-col">Password:</td>
+							<td class="input-col"><input type="Password" name="password" id="password" onblur="validatePass();"></td>
+							<td><span id="passwordPrompt">&nbsp;</span></td>
+						<tr>
+						<tr>
+							<td>Fecha:</td>
+							<td><input type="date" name="Date" placeholder="date" required></td>
+						</tr>
+						<tr>
+							<td class="label-col">Habitación:</td>
+							<td class="input-col"><input type="checkbox" name="Habitaciones" value="Salón" style="">Salón</td>
+							<td class="input-col"><input type="checkbox" name="Habitaciones" value="Dormitorio">Dormitorio</td>
+							<td class="input-col"><input type="checkbox" name="Habitaciones" value="Pasillo">Pasillo</td>
+							<td class="input-col"><input type="checkbox" name="Habitaciones" value="Escaleras">Escalera</td>
+						<tr>	
+						<tr>
+							<td class="label-col">Colores:</td>
+							<td class="input-col"><input type="radio" name="Colores" value="Gris">Gris
+							</td>
+							<td class="input-col"><input type="radio" name="Colores" value="Blanco">Blanco</td>
+							<td class="input-col"><input type="radio" name="Colores" value="Verde">Verde</td>
+							<td class="input-col"><input type="radio" name="Colores" value="Azul">Azul
+							</td>
+						</tr>
+						<tr>
+							<td class="label-col">Tipo de Mueble:</td>
+							<td class="input-col"><input type="radio" name="Muebles" value="Nórdico">Nórico</td>
+							<td class="input-col"><input type="radio" name="Muebles" value="Romántico">Romántico</td>
+							<td class="input-col"><input type="radio" name="Colores" value="Clásico">Clásico</td>
+							<td class="input-col"><input type="radio" name="Colores" value="Rústico">Rústico</td>
+						</tr>
+						<tr>
+							<td class="label-col">Decoración:</td>
+							<td class="input-col"><input type="checkbox" name="Decoración" value="Cuadros">Cuadros</td>
+							<td class="input-col"><input type="checkbox" name="Decoración" value="Jarrones">Jarrones</td>
+							<td class="input-col"><input type="checkbox" name="Decoración" value="Velas">Velas</td>
+							<td class="input-col"><input type="checkbox" name="Decoración" value="Fotos">Fotos</td>
+						</tr>
+						<tr>
+							<td><button type ='Guardar' value='Guardar' onclick="guardar();">Guardar
+							</button></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+	</body>
+</html>

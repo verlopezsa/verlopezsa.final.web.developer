@@ -1,0 +1,55 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #61122f;
+  font-family: 'Oxygen', sans-serif;
+}
+h1  {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+	margin-right: 2%;
+}  
+
+#logo {
+  width: 250px;
+  height: 250px;
+  align-self: center;
+}
+#Espacios {
+	font-size: 20px;
+	text-align: center;
+}
+#Tabla {
+	font-size: 20px;
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+#usuarioPrompt, #passwordPrompt {
+	font-size: 9px;
+}
+
+.row {
+	width: 100%;
+}
+@media (min-width: 992px) {
+		.col-lg {
+		float: left;
+		width: 50%;
+		}			
+}
+
+table {
+	width: 90%;
+	margin-bottom: 2%;
+	background-color: #E3BED3;
+
+td  {
+	text-align: center;
+	padding: 8px;
+	margin-top: 3%;
+
+}
